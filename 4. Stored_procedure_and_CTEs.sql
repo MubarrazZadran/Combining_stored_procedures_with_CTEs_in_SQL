@@ -1,4 +1,4 @@
--- Join tables, merchandise_item, merchandise_item_supplier, supplier and then apply a CTE to get columns item_id, merchandise_name, and supplier_name. 
+-- Join tables merchandise_item, merchandise_item_supplier, supplier and then apply a CTE to get columns item_id, merchandise_name, and supplier_name. 
 
 with cte_1(item_id,merchandise_name,supplier_name) as (select mi.merchandise_item_id, mi.description, s.supplier_name
 from merchandise_item mi join
